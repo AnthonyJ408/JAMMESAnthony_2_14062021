@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "Raleway", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  padding: 15px 5px 5px 15px;
+  margin: 15px 5px 5px 15px;
+}
+#logo {
+  width: 100px;
+  height: 10%;
+  position: relative;
+  float: left;
+}
+nav ul {
+  list-style-type: none;
+  text-align: right;
+  font-weight: bold;
+}
+nav li {
+  display: inline;
+  margin: 20px;
+}
+a
+{
+  text-decoration: none;
+}
+a[class="Menu"]:hover {
+  border-top: 2px solid #0065fc;
+  font-weight: lighter;
+  padding: 1em;
+  margin: 20px;
+}
+a[class="Menu"]:visited {
+  font-weight: normal;
+  color: black;
+}
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 50px 5px 5px 0px;
+}
+
+#pin:nth-child(2) {
+  order: 1;
+}
+#site-search:nth-child(1) {
+  order: 2;
+}
+#Recherche:nth-child(3) {
+  order: 3;
+}
+#search {
+  height: 35px;
+  display: flex;
+  padding: 50px 0px 5px 10px;
+}
+#barrederecherche {
+  width: 300px;
+}
+#Recherche {
+  background-color: #0065fc;
+  font-family: "Raleway", sans-serif;
+  color: #deebff;
+  border-radius: 0px 10px 10px 0px;
+  border: white;
+}
+#Recherche:hover {
+  background-color: #deebff;
+  color: #0065fc;
+}
+i {
+  color: #0065fc;
+}
+#pincolor {
+  color: black;
+}
+
+#pin {
+  border-radius: 10px 0px 0px 10px;
+  border: white;
+  background-color: rgb(242, 242, 242);
+  width: 10%;
+}
+#filtres ul {
+  list-style-type: none;
+  font-weight: bold;
+  display: flex;
+  vertical-align: middle;
+}
+#filtres li {
+  display: flex;
+  padding: 10px 20px 10px 0px;
+  vertical-align: middle;
+}
+#filtres {
+  display: flex;
+  padding: 20px 0px 0px 0px ;
+  vertical-align: middle;
+}
+#filtres i {
+  display: flex;
+  background-color: #deebff;
+  border-radius: 100px;
+  padding: 20px 20px 20px 20px;
+}
+#filtres a {
+  display: flex;
+  padding: 0px 20px 0px 0px ;
+  border: solid #F2F2F2;
+  border-radius: 50px;
+}
+#filtres span{
+  display: flex;
+  padding: 10px 15px 10px 0px ;
+  margin: 10px 0px 10px 0px;
+
+}
+#filtres a:hover{
+  display: flex;
+  padding: 0px 20px 0px 0px ;
+  border: solid #F2F2F2;
+  border-radius: 50px;
+  background-color: #0065fc;
+  color: #deebff;
+}
