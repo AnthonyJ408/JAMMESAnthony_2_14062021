@@ -53,8 +53,12 @@ h1 {
 #Recherche:nth-child(3) {
   order: 3;
 }
+#site-search{
+  font-weight: bold; 
+}
 #search {
-  height: 35px;
+  font-weight: bold;
+  height: 50px;
   display: flex;
   padding: 50px 0px 5px 10px;
 }
@@ -62,6 +66,7 @@ h1 {
   width: 300px;
 }
 #Recherche {
+  font-weight: bold;
   background-color: #0065fc;
   font-family: "Raleway", sans-serif;
   color: #deebff;
@@ -76,10 +81,14 @@ i {
   color: #0065fc;
 }
 #pincolor {
+  text-align: center;
+  display: flex;
+  font-size: 20px;
   color: black;
 }
 
 #pin {
+  padding: 0px 30px 0px 20px;
   border-radius: 10px 0px 0px 10px;
   border: white;
   background-color: rgb(242, 242, 242);
@@ -127,3 +136,4 @@ i {
   background-color: #0065fc;
   color: #deebff;
 }
+/**filtres à revoir pour intégrer le logo au reste sans le background.**/ 
