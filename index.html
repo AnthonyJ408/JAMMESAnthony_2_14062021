@@ -34,16 +34,16 @@
           placeholder="Saisir une destination"       
           />
           <button type="submit" form="left" disabled id=pin><i id=pincolor class="fas fa-map-marker-alt"></i></button>
-          <button id=Recherche>Rechercher</button>
+          <button id="Recherche">Rechercher</button>
         </div> 
       </section>
       <section id="filtres">
       <ul>   
         <li><span>Filtres</span></li>
-        <li><a href="?"><i class="fas fa-money-bill-wave"></i><br>Économique</a></li>
-        <li><a href="?"><i class="fas fa-child"></i><br>Familial</a></li>
-        <li><a href="?"><i class="fas fa-heart"></i><br>Romantique </a></li>
-        <li><a href="?"><i class="fas fa-dog"></i><br> Animaux autorisés</a></li>
+        <li><a href="?"><i class="fas fa-money-bill-wave"></i><span> Économique</span></a></li>
+        <li><a href="?"><i class="fas fa-child"></i><span> Familial</span></a></li>
+        <li><a href="?"><i class="fas fa-heart"></i><span> Romantique</span></a></li>
+        <li><a href="?"><i class="fas fa-dog"></i><span>Animaux autorisés</span></a></li>
       </ul> 
         <!-- Pensez à rajoutez une ref-->
       </section>
@@ -67,7 +67,7 @@
            Nuit à partir de 25€ <br>
           <i class="fas fa-star"></i><i class="fas fa-star"></i
           ><i class="fas fa-star"></i><i class="fas fa-star"></i
-          ><i class="fas fa-star"></i>
+          ><i id=nostar class="fas fa-star"></i>
         </div>
       </a>
       <div class="element2">
@@ -95,7 +95,7 @@
           Nuit à partir de 76€<br>
           <i class="fas fa-star"></i><i class="fas fa-star"></i
           ><i class="fas fa-star"></i><i class="fas fa-star"></i
-          ><i class="fas fa-star"></i>
+          ><i id=nostar class="fas fa-star"></i>
         </div>
         </a>
         <div class=element4>
@@ -108,8 +108,8 @@
           <h4> Hôtel de la mer</h4>
           Nuit à partir de 46€<br>
           <i class="fas fa-star"></i><i class="fas fa-star"></i
-          ><i class="fas fa-star"></i><i class="fas fa-star"></i
-          ><i class="fas fa-star"></i>
+          ><i class="fas fa-star"></i><i id=nostar class="fas fa-star"></i
+          ><i id=nostar class="fas fa-star"></i>
         </div>
         </a>
         <div class="element5">
@@ -123,7 +123,7 @@
           Nuit à partir de 23€<br>
           <i class="fas fa-star"></i><i class="fas fa-star"></i
           ><i class="fas fa-star"></i><i class="fas fa-star"></i
-          ><i class="fas fa-star"></i>
+          ><i id=nostar class="fas fa-star"></i>
         </div>
       </a>
       <div class="element6">
@@ -142,52 +142,59 @@
       </a>
       <span>
         <a href="liste">Afficher plus</a>
-        </span>
+      </span>
         <!-- Pensez à rajoutez une ref et voir en CSS pour les étoiles vides-->
       </article>
       <!-- Articles Hébergements exemple Marseille-->
       <aside>
-        <h1>Les plus populaires</h1>
-        <p>
-          <a href="Populaires"><i class="fas fa-chart-line"></i></a>
-        </p>
-
+        <h2>Les plus populaires
+        <a href="Populaires"><i class="fas fa-chart-line"></i></a>
+       </h2>
         <div id="Photos Aside">
+         <a href="?">
           <img
             src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
             alt="Hôtel Le soleil du matin"
-          /><br />
-          Hôtel Le soleil du matin à partir de 126€
+          />
+          <span>
+          <h4> Hôtel Le soleil du matin</h4> 
+          Nuit à partir de 126€<br>
           <i class="fas fa-star"></i><i class="fas fa-star"></i
           ><i class="fas fa-star"></i><i class="fas fa-star"></i
           ><i class="fas fa-star"></i>
-        </div>
-      </a>
-      <a href="?">
-        <div id="Photos Aside">
+          </span>
+        </a>
+      </div>
+      <div id="Photos Aside">
+        <a href="?">
           <img
             src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
             alt="Au Cœur de l'eau Chambres d'hôtes"
-          /><br />
-          Au Cœur de l'eau Chambres d'hôtes à partir de 71€
+          />
+          <span>
+          <h4> Au Cœur de l'eau Chambres d'hôtes</h4>
+          Nuit à partir de 71€<br>
           <i class="fas fa-star"></i><i class="fas fa-star"></i
           ><i class="fas fa-star"></i><i class="fas fa-star"></i
           ><i class="fas fa-star"></i>
-        </div>
-      </a>
-      <a href="?">
-        <div id="Photos Aside">
+        </span>
+        </a>
+      </div> 
+      <div id="Photos Aside">
+        <a href="?">
           <img
             src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
             alt="Hôtel Tout bleu et Blanc"
-          /><br />
-          Hôtel Tout bleu et Blanc à partir de 68€
+          />
+          <span>
+          <h4> Hôtel Tout bleu et Blanc</h4>
+          Nuit à partir de 68€<br>
           <i class="fas fa-star"></i><i class="fas fa-star"></i
           ><i class="fas fa-star"></i><i class="fas fa-star"></i
-          ><i class="fas fa-star"></i>
-        </div>
-      </a>
-      
+          ><i  class="fas fa-star"id="nostar"></i>
+        </span>
+        </a>
+      </div>      
       </aside>
     </section>
     <section id="Activités">
