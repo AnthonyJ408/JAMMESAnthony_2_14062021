@@ -7,8 +7,7 @@
 body 
 {
   font-family: "Raleway", sans-serif;
-  padding: 2px 50px 50px 50px;
-  margin:0px;
+  margin: 50px;
 }
 /*Header*/
   #logo 
@@ -21,7 +20,7 @@ body
   /*Menu*/
     nav
    {
-    width: 1500px;
+    width: 100%;
    }
     nav ul 
     {
@@ -41,8 +40,7 @@ body
     {
       border-top: 2px solid #0065fc;
       font-weight: lighter;
-      padding: 1em;
-      margin: 20px;
+      padding: 30px;
     }
     a[class="Menu"]:visited 
     {
@@ -111,7 +109,7 @@ body
       background-color: #deebff;
       color: #0065fc;
     }
-    i 
+    #filtres i 
     {
       height: 20px;
       color: #0065fc;
@@ -216,22 +214,27 @@ body
     {
       display: flex;
       height: 700px;
-      width: 80%;
+      width: 100%;
       align-content: flex-start;
       flex-wrap: wrap;
     }
-    article
+     div i
     {
-      display: flex;
-      background-color: #f2f2f2;
+      color: #0065fc;
+      font-size: 12px;
+    }
+    #Hébergements article
+    {
+      background-color: #f2f2f2; 
+      width: 70%; 
+      margin: 40px 20px 50px 0px;
+      display: flex;  
       border: #f2f2f2;
       border-radius: 20px;
-      width: 880px;
       height: 700px;
       overflow: hidden;
       align-content: flex-start;
-      flex-wrap: wrap;
-      margin: 40px 50px 50px 0px;
+      flex-wrap: wrap;  
     }
     #Hébergements h2
     {
@@ -286,7 +289,7 @@ body
     }
     #Hébergements article img 
     {
-      width: 230px; 
+      width: 100%; 
       height: 60%; 
       object-fit: cover;
       border-radius: 20px 20px 0px 0px;
@@ -294,11 +297,11 @@ body
     
     #Hébergements article div
     {
-      margin: 20px;
+      margin: 10px;
       padding: 10px;
       background-color: white;
-      width: 230px;
-      height: 200px;
+      width: 29.5%;
+      height: 250px;
       border-radius: 20px;
       box-shadow: 1px 1px 1px black;
     }
@@ -310,15 +313,18 @@ body
       border: #f2f2f2;
       border-radius: 20px;
       margin-top: 40px;
-      width: 420px;
+      width: 28%;
       height: 700px;
       overflow: hidden;
       align-content: flex-start;
       flex-wrap: wrap;
+      justify-content: center;
     }
     aside h2 a
     {
-      padding-left: 150px;
+      padding-left: 50%;
+      margin-bottom: 20px;
+      color: black;
     }
     #Hébergements aside div:hover
     {
@@ -344,21 +350,23 @@ body
       align-content: flex-start;
       flex-wrap: wrap;
       width: 40% ; 
-      height: 80%; 
+      height: 140px; 
       object-fit: cover;
       border-radius: 20px 0px 0px 20px;
       padding: 10px;
+      
     }
     #Hébergements aside div
     {
       display: flex;
       align-content: flex-start;
       flex-wrap: wrap;
-      margin: 15px;
+      justify-content: center;
+      margin: 10px 5px 10px 5px;
       padding: 10px;
       background-color: white;
-      width: 100%;
-      height: 140px;
+      width: 85%;
+      height: 160px;
       border-radius: 20px;
       box-shadow: 1px 1px 1px black;
     }
@@ -373,8 +381,8 @@ body
    #Hébergements aside div a
    {
       display: flex; 
-      width: 350px ; 
-      height: 100%;
+      width: 100% ; 
+      height: 160px;
       padding: 5px;
    }
    aside div span
@@ -387,11 +395,200 @@ body
   #Activités
   {
     display: flex;
-    height: 300px;
-    width: 80%;
+    height: 700px;
+    width: 100%;
     align-content: flex-start;
     flex-wrap: wrap;
-    margin: 0px;
+    margin-top: 50px;
+  }
+  #Activités article
+  {
+    flex-direction: column;
+    display: flex;  
+    border: #f2f2f2;
+    border-radius: 20px;
+    height: 700px;
+    overflow: hidden;
+    align-content:flex-start;
+    flex-wrap: wrap;  
+    width: 100%;
+  }
+  #Activités div:hover
+    {
+      background-color:#0065fc;
+      box-shadow: 5px 5px 5px white;
+    }
+  #Activités div:hover a
+    {
+      color: white;
+    }
+  #Activités div:hover i
+    {
+      color: white;
+    }
+  #Activités div:hover #nostar
+    {
+      color: #0065fc;
+      text-shadow: 1px 1px 2px white;
+    }
+  
+  #Activités div
+    {
+      display: flex;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 10px;
+      padding: 10px;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 1px 1px 1px #f2f2f2;
+      font-weight: bold;
+    }
+  #Grandes
+  {
+    width: 22.25%;
+    height: 700px ;
+  }
+  #Grandes img 
+    {
+      display: flex;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      width: 100% ; 
+      height: 630px; 
+      object-fit: cover;
+      border-radius: 20px 20px 0px 0px;
+      
+    }
+    #Grandes div a
+   {
+      display: flex; 
+      width: 100% ; 
+      height: 700px;
+   }
+  #pornegres
+  {
+    width: 22.25%;
+    height: 372px;
+  }
+  #pornegres img 
+    {
+      display: flex;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      width: 100% ; 
+      height: 334.8px; 
+      object-fit: cover;
+      border-radius: 20px 20px 0px 0px;     
+    }
+    #pornegres div a
+   {
+      display: flex; 
+      width: 100% ; 
+      height: 372px;
+   }
+   #Frioul
+   {
+     width: 22.25%;
+     height: 248px;
+   }
+   #Frioul img 
+     {
+       display: flex;
+       align-content: flex-start;
+       flex-wrap: wrap;
+       width: 100% ; 
+       height: 223.2px; 
+       object-fit: cover;
+       border-radius: 20px 20px 0px 0px; 
+     }
+     #Frioul div a
+    {
+       display: flex; 
+       width: 100% ; 
+       height: 244px;
+    }
+    #moitie
+    {
+      width: 22.25%;
+      height: 310px;
+    }
+    #moitie img 
+      {
+        display: flex;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        width: 100% ; 
+        height: 279px; 
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px; 
+      }
+      #moite div a
+     {
+        display: flex; 
+        width: 100% ; 
+        height: 310px;
+     }
+     #Activités h2
+    {
+      display: flex ;
+      font-weight: bold;
+      font-size: 1.2em;
+      margin: 25px 30px 0px 30px;
+      width: 100%;
+    }
+    .un:nth-child(1) 
+    {
+      order: 1;
+    }
+    .deux:nth-child(2) 
+    {
+      order: 2;
+    }
+    .troix:nth-child(3) 
+    {
+      order: 3;
+    }
+    .quatre:nth-child(4)
+    {
+      order: 4;
+    }
+    .cinq:nth-child(5)
+    {
+      order: 5;
+    }
+    .six:nth-child(6)
+    {
+      order: 6;
+    }
+    #Activités a
+    {
+      color: black;
+    }
+
+  /*Footer*/
+  footer
+  {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    background-color: #f2f2f2;
+  }
+  footer div
+  {
+    display: flex;
+    margin: 10px;
+    width: 30%;
+    height: 150px;
+    flex-direction: column;
+  }
+  footer div a
+  {
+    color: black;
   }
 
 
