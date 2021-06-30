@@ -4,594 +4,747 @@
   font-weight: normal;
   font-style: normal;
 }
-body 
-{
+
+body {
   font-family: "Raleway", sans-serif;
-  margin: 50px;
+  margin: 50px 0px 10px 10px;
+  max-width: 1300px;
 }
+
+
 /*Header*/
-  #logo 
-  {
-    width: 100px;
+
+#logo {
+  width: 100px;
+  height: 10%;
+  position: relative;
+  float: left;
+}
+
+
+/*Menu*/
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: right;
+  font-weight: bold;
+}
+
+nav li {
+  display: inline;
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a[class="Menu"]:hover {
+  border-top: 2px solid #0065fc;
+  padding: 30px;
+}
+
+a[class="Menu"]:visited {
+  font-weight: 400;
+  color: black;
+}
+
+
+/*Titres*/
+
+h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 50px 5px 5px 0px;
+}
+
+
+/*Barre de recherche*/
+
+#pin:nth-child(2) {
+  order: 1;
+}
+
+#site-search:nth-child(1) {
+  order: 2;
+}
+
+#Recherche:nth-child(3) {
+  order: 3;
+}
+
+#site-search {
+  border: 1px solid #f2f2f2;
+  font-size: 1.2em;
+  width: 25%;
+}
+
+form {
+  display: flex;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+}
+
+#barrederecherche {
+  margin: 20px 20px 20px 0px;
+  width: 100%;
+  height: 40px;
+}
+
+#Recherche {
+  font-weight: bold;
+  background-color: #0065fc;
+  font-family: "Raleway", sans-serif;
+  color: #deebff;
+  border-radius: 0px 20px 20px 0px;
+  border: white;
+  font-size: 1em;
+  padding: 10px;
+}
+
+#Recherche:hover {
+  background-color: #deebff;
+  color: #0065fc;
+}
+
+#filtres i {
+  height: 20px;
+  color: #0065fc;
+}
+
+#pincolor {
+  padding: 5px;
+  display: flex;
+  font-size: 1.2em;
+  color: black;
+}
+
+#pin {
+  padding: 10px;
+  border-radius: 20px 0px 0px 20px;
+  border: white;
+  background-color: rgb(242, 242, 242);
+  width: 2%;
+}
+
+
+/*Filtres*/
+
+#filtres ul {
+  list-style-type: none;
+  font-weight: bold;
+  display: flex;
+  vertical-align: middle;
+  padding-left: 0px;
+  margin: 0px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#filtres li {
+  display: flex;
+  padding: 1%;
+  vertical-align: middle;
+}
+
+#filtres {
+  display: flex;
+  padding: 20px 20px 20px 0px;
+  vertical-align: middle;
+}
+
+#filtres i {
+  display: flex;
+  background-color: #deebff;
+  border-radius: 100px;
+  padding: 10px;
+  margin-left: -2px;
+  width: 20px;
+}
+
+.fa-heart:before {
+  padding-top: 3px;
+  padding-left: 2px;
+  content: "\f004";
+}
+
+.fa-child:before {
+  content: "\f1ae";
+  padding-left: 4px;
+  padding-top: 1px;
+}
+
+#filtres a {
+  display: flex;
+  padding: 0px 20px 0px 0px;
+  border: solid #f2f2f2;
+  border-radius: 50px;
+}
+
+#filtres div {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  margin: 10px 0px 10px 0px;
+  color: black;
+}
+
+#filtres a:hover {
+  display: flex;
+  padding: 0px 20px 0px 0px;
+  border: solid #f2f2f2;
+  border-radius: 50px;
+  background-color: #0065fc;
+  color: #deebff;
+}
+
+#filtres a:hover i {
+  background-color: #0065fc;
+  color: #deebff;
+}
+
+#filtres a:hover div {
+  color: white;
+}
+
+#info i {
+  border: solid 2px #f2f2f2;
+  border-radius: 100px;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  padding: 3px 1px 0px 1px;
+}
+
+
+/*section id="Hébergements article*/
+
+#Hébergements {
+  display: flex;
+  width: 100%;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+div i {
+  color: #0065fc;
+  font-size: 12px;
+}
+
+#Hébergements article {
+  padding: 30px 0px 30px 0px;
+  margin: 30px 30px 0px 0px;
+  background-color: #f2f2f2;
+  width: 67%;
+  display: flex;
+  border: #f2f2f2;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#Hébergements article h2 {
+  display: flex;
+  font-weight: bold;
+  font-size: 1.5em;
+  width: 100%;
+  margin-left: 30px;
+}
+
+#Hébergements article h3 {
+  margin: 0px;
+  font-size: 1.2em;
+}
+
+#Hébergements a {
+  color: black;
+}
+
+.element:hover {
+  background-color: #0065fc;
+  box-shadow: 5px 5px 5px white;
+}
+
+.element:hover a {
+  color: white;
+}
+
+.element:hover i {
+  color: white;
+}
+
+.element:hover #nostar {
+  color: #0065fc;
+  text-shadow: 1px 1px 2px white;
+}
+
+#Hébergements p a {
+  color: black;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+#Hébergements p {
+  width: 100%;
+}
+
+#nostar {
+  color: #f2f2f2;
+}
+
+#Hébergements article img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+#textarticle p {
+  margin: 0px;
+}
+
+#textarticle {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  height: 30%;
+  flex-wrap: wrap;
+}
+
+.element {
+  margin: 1.5%;
+  padding: 5px 5px 15px 5px;
+  background-color: white;
+  width: 28%;
+  height: 200px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px silver;
+}
+
+
+/*Aside*/
+
+aside {
+  display: flex;
+  background-color: #f2f2f2;
+  border: #f2f2f2;
+  border-radius: 20px;
+  margin-top: 30px;
+  padding: 30px;
+  width: 25%;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+#photoaside a {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+#Hébergements aside h2 {
+  display: flex;
+  font-weight: bold;
+  font-size: 1.5em;
+  width: 100%;
+}
+
+aside h2 a {
+  padding-left: 22%;
+  margin-bottom: 20px;
+  color: black;
+}
+
+#photoaside:hover {
+  background-color: #0065fc;
+  box-shadow: 5px 5px 5px white;
+}
+
+#photoaside:hover a {
+  color: white;
+}
+
+#photoaside:hover i {
+  color: white;
+}
+
+#photoaside:hover #nostar {
+  color: #0065fc;
+  text-shadow: 1px 1px 2px white;
+}
+
+#Hébergements aside img {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 0px 0px 20px;
+}
+
+#photoaside {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 5px;
+  background-color: white;
+  width: 100%;
+  height: 150px;
+  margin: 15px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px silver;
+  align-items: stretch;
+  flex-direction: row;
+}
+
+#Hébergements aside h3 {
+  margin: 0px;
+  font-size: 1.2em;
+}
+
+#textaside {
+  margin: 1.5%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 55%;
+}
+
+
+/*Activités*/
+
+#Activités {
+  display: flex;
+  height: 700px;
+  width: 100%;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+#Activités p {
+  margin: 15px;
+}
+
+#Activités article {
+  flex-direction: column;
+  display: flex;
+  border: #f2f2f2;
+  border-radius: 20px;
+  height: 700px;
+  overflow: hidden;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#Activités div:hover {
+  background-color: #0065fc;
+}
+
+#Activités div:hover a {
+  color: white;
+}
+
+#Activités div:hover i {
+  color: white;
+}
+
+#Activités div:hover #nostar {
+  color: #0065fc;
+  text-shadow: 1px 1px 2px white;
+}
+
+#Activités div {
+  display: block;
+  margin: 10px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px #f2f2f2;
+  font-weight: bold;
+}
+
+#Grandes {
+  width: 20%;
+  height: 100%;
+}
+
+#Grandes img {
+  width: 100%;
+  height: 39rem;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+#Grandes div a {
+  width: 100%;
+  height: 700px;
+}
+
+#pornegres {
+  width: 23%;
+  height: 385px;
+}
+
+#pornegres img {
+  width: 100%;
+  height: 21rem;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+#pornegres div a {
+  width: 100%;
+  height: 372px;
+}
+
+#Frioul {
+  width: 23%;
+  height: 273px;
+}
+
+#Frioul img {
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+#Frioul div a {
+  width: 100%;
+  height: 273px;
+}
+
+#moitie {
+  width: 31%;
+  height: 329px;
+}
+
+#moitie img {
+  width: 100%;
+  height: 17rem;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+#moite div a {
+  width: 100%;
+  height: 329px;
+}
+
+#Activités h2 {
+  display: flex;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 30px;
+  width: 100%;
+}
+
+.un:nth-child(1) {
+  order: 1;
+}
+
+.deux:nth-child(2) {
+  order: 2;
+}
+
+.troix:nth-child(3) {
+  order: 3;
+}
+
+.quatre:nth-child(4) {
+  order: 4;
+}
+
+.cinq:nth-child(5) {
+  order: 5;
+}
+
+.six:nth-child(6) {
+  order: 6;
+}
+
+#Activités a {
+  color: black;
+}
+
+
+/*Footer*/
+
+footer {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 10%;
+  background-color: #f2f2f2;
+  line-height: 2em;
+}
+
+footer div {
+  display: flex;
+  margin: 1%;
+  padding: 1%;
+  width: 25%;
+  height: 150px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+footer div a {
+  color: black;
+}
+/*Tablette et jusqu'a 1151px*/
+@media (max-width: 1151px){
+
+#Hébergements article {
+  width: 100%;
+}
+#Hébergements aside{
+  width: 100%;
+  padding: 30px 0px 30px 0px;
+  margin: 30px 30px 0px 0px;
+  background-color: #f2f2f2;
+  display: flex;
+  border: #f2f2f2;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#photoaside {
+  display: flex;
+  flex-direction: row;
+  align-items: normal;
+  margin: 15px;
+  padding: 5px 5px 15px 5px;
+  background-color: white;
+  width: 28%;
+  height: 200px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px silver;
+}
+#Hébergements aside h2{
+  display: inline;
+  margin-left: 30px;
+}
+aside{
+  flex-direction: row;
+  align-items: normal;
+}
+#Hébergements aside img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+#textaside {
+  padding: 10px;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#textaside p {
+  margin: 0px;
+}
+#Hébergements aside h3 {
+  margin: 0px;
+  font-size: 1.2em;
+}
+#photoaside a{
+  display: flex;
+  flex-direction: column;
+}
+aside h2 a{
+  padding-left: 0px;
+}
+#Activités article{
+  flex-direction: row;
+}
+#Grandes {
+  width: 100%;
+  height: 21%;
+}
+
+#Grandes img {
+  width: 100%;
+  height: 6rem;
+}
+
+#Grandes div a {
+  width: 100%;
+  height: 21%;
+}
+#pornegres {
+  width: 58%;
+  height: 21%;
+}
+
+#pornegres img {
+  width: 100%;
+  height: 6rem;
+}
+
+#pornegres div a {
+  width: 58%;
+  height: 21%;
+}
+#Frioul {
+  width: 38%;
+  height: 21%;
+}
+#Frioul img {
+  width: 100%;
+  height: 6rem;
+}
+
+#Frioul div a {
+  width: 38%;
+  height: 21%;
+}
+#Activités div {
+  margin: 1%;
+}
+#moitie {
+  width: 48%;
+  height: 21%;
+}
+
+#moitie img {
+  width: 100%;
+  height: 6rem;
+}
+
+#moite div a {
+  width: 48%;
+  height: 21%;
+}
+footer div {
+  width: 45%;
+}
+footer {
+  height: 400px;
+}
+}
+/*Téléphone*/
+@media (max-width: 768px){
+  #logo {
+    width: 50%;
     height: 10%;
-    position: relative;
-    float: left;
-  }
-  /*Menu*/
-    nav
-   {
-    width: 100%;
-   }
-    nav ul 
-    {
-      list-style-type: none;
-      text-align: right;
-      font-weight: bold;
-    }
-    nav li 
-    {
-      display: inline;
-      margin: 20px;
-    }
-    a {
-      text-decoration: none;
-    }
-    a[class="Menu"]:hover 
-    {
-      border-top: 2px solid #0065fc;
-      font-weight: lighter;
-      padding: 30px;
-    }
-    a[class="Menu"]:visited 
-    {
-      font-weight:400;
-      color: black;
-    }
-  /*Titres*/
-    h1 
-    {
-      font-size: 1.5em;
-      font-weight: bold;
-      margin: 50px 5px 5px 0px;
-    }
-  /*Barre de recherche*/
-    #pin:nth-child(2) 
-    {
-      order: 1;
-    }
-    #site-search:nth-child(1) 
-    {
-      order: 2;
-    }
-    #Recherche:nth-child(3) 
-    {
-      order: 3;
-    }
-    #site-search 
-    {
-      font-weight: bold;
-      padding: 0px 40px 0px 20px;
-      border: 1px solid #f2f2f2;
-      font-size: 1.3em;
-    }
-    input
-    {
-      font-weight: bold;
-      font-size: 1.5em;
-      font-family: "Raleway", sans-serif;
-    }
-
-    #search 
-    {
-      font-weight: bold;
-      height: 60px;
-      display: flex;
-      padding-top: 20px;
-    }
-    #barrederecherche 
-    {
-      width: 60px;
-      height: 60px;
-    }
-    #Recherche 
-    {
-      font-weight: bold;
-      background-color: #0065fc;
-      font-family: "Raleway", sans-serif;
-      color: #deebff;
-      border-radius: 0px 20px 20px 0px;
-      border: white;
-      font-size: 1.2em;
-      padding: 20px;
-    }
-    #Recherche:hover 
-    {
-      background-color: #deebff;
-      color: #0065fc;
-    }
-    #filtres i 
-    {
-      height: 20px;
-      color: #0065fc;
-    }
-    #pincolor 
-    {
-      text-align: center;
-      display: flex;
-      font-size: 20px;
-      color: black;
-    }
-
-    #pin 
-    {
-      padding: 0px 30px 0px 20px;
-      border-radius: 20px 0px 0px 20px;
-      border: white;
-      background-color: rgb(242, 242, 242);
-      width: 10%;
-    }
-  /*Filtres*/
-    #filtres ul {
-      list-style-type: none;
-      font-weight: bold;
-      display: flex;
-      vertical-align: middle;
-      padding-left: 0px;
-      margin: 0px;
-    }
-    #filtres li {
-      display: flex;
-      padding: 20px;
-      vertical-align: middle;
-    }
-    #filtres {
-      display: flex;
-      padding: 20px 20px 20px 0px;
-      vertical-align: middle;
-    }
-    #filtres i {
-      display: flex;
-      background-color: #deebff;
-      border-radius: 100px;
-      padding: 20px;
-      margin-left: -2px;
-      width: 20px;
-    }
-    .fa-heart:before {
-      padding-top: 3px;
-      padding-left: 2px;
-      content: "\f004";
-    }
-    .fa-child:before {
-      content: "\f1ae";
-      padding-left: 4px;
-      padding-top: 1px;
-    }
-    #filtres a {
-      display: flex;
-      padding: 0px 20px 0px 0px;
-      border: solid #f2f2f2;
-      border-radius: 50px;
-    }
-    #filtres span {
-      display: flex;
-      padding: 10px 15px 10px 15px;
-      margin: 10px 0px 10px 0px;
-      color: black;
-    }
-    #filtres a:hover {
-      display: flex;
-      padding: 0px 20px 0px 0px;
-      border: solid #f2f2f2;
-      border-radius: 50px;
-      background-color: #0065fc;
-      color: #deebff;
-    }
-    #filtres a:hover i {
-      display: flex;
-      background-color: #0065fc;
-      color: #deebff;
-      border-radius: 100px;
-      padding: 20px 20px 20px 20px;
-    }
-    #filtres a:hover span
-    {
-      color: white;
-    }
-    #info i {
-      border: solid 2px #f2f2f2;
-      border-radius: 100px;
-      padding: 5px;
-      width: 20px;
-      height: 20px;
-      text-align: center;
-    }
-
-/*section id="Hébergements
-    article*/
-    
-    #Hébergements
-    {
-      display: flex;
-      height: 700px;
-      width: 100%;
-      align-content: flex-start;
-      flex-wrap: wrap;
-    }
-     div i
-    {
-      color: #0065fc;
-      font-size: 12px;
-    }
-    #Hébergements article
-    {
-      background-color: #f2f2f2; 
-      width: 70%; 
-      margin: 40px 20px 50px 0px;
-      display: flex;  
-      border: #f2f2f2;
-      border-radius: 20px;
-      height: 700px;
-      overflow: hidden;
-      align-content: flex-start;
-      flex-wrap: wrap;  
-    }
-    #Hébergements h2
-    {
-      display: flex ;
-      font-weight: bold;
-      font-size: 1.2em;
-      margin: 30px 30px 0px 30px;
-      width: 100%;
-    }
-    #Hébergements h4
-    {
-      margin: 10px 0px 10px 0px;
-      font-size: 1.2em  ;
-    }
-    #Hébergements article span
-    {
-      display: flex;
-      margin: 30px;
-      width: 100%;
-    }
-    #Hébergements a
-    {
-      color: black;
-    }
-    #Hébergements article div:hover
-    {
-      background-color:#0065fc;
-      box-shadow: 5px 5px 5px white;
-    }
-    #Hébergements article div:hover a
-    {
-      color: white;
-    }
-    #Hébergements article div:hover i
-    {
-      color: white;
-    }
-    #Hébergements article div:hover #nostar
-    {
-      color: #0065fc;
-      text-shadow: 1px 1px 2px white;
-    }
-    #Hébergements span a
-    {
-      color: black;
-      font-size: 1.2em;
-      font-weight: bold;
-    }
-    #nostar
-    {
-      color: #f2f2f2;
-    }
-    #Hébergements article img 
-    {
-      width: 100%; 
-      height: 60%; 
-      object-fit: cover;
-      border-radius: 20px 20px 0px 0px;
-    }
-    
-    #Hébergements article div
-    {
-      margin: 10px;
-      padding: 10px;
-      background-color: white;
-      width: 29.5%;
-      height: 250px;
-      border-radius: 20px;
-      box-shadow: 1px 1px 1px black;
-    }
-    /*Aside*/
-    aside
-    {
-      display: flex;
-      background-color: #f2f2f2;
-      border: #f2f2f2;
-      border-radius: 20px;
-      margin-top: 40px;
-      width: 28%;
-      height: 700px;
-      overflow: hidden;
-      align-content: flex-start;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    aside h2 a
-    {
-      padding-left: 50%;
-      margin-bottom: 20px;
-      color: black;
-    }
-    #Hébergements aside div:hover
-    {
-      background-color:#0065fc;
-      box-shadow: 5px 5px 5px white;
-    }
-    #Hébergements aside div:hover a
-    {
-      color: white;
-    }
-    #Hébergements aside div:hover i
-    {
-      color: white;
-    }
-    #Hébergements aside div:hover #nostar
-    {
-      color: #0065fc;
-      text-shadow: 1px 1px 2px white;
-    }
-    #Hébergements aside img 
-    {
-      display: flex;
-      align-content: flex-start;
-      flex-wrap: wrap;
-      width: 40% ; 
-      height: 140px; 
-      object-fit: cover;
-      border-radius: 20px 0px 0px 20px;
-      padding: 10px;
-      
-    }
-    #Hébergements aside div
-    {
-      display: flex;
-      align-content: flex-start;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 10px 5px 10px 5px;
-      padding: 10px;
-      background-color: white;
-      width: 85%;
-      height: 160px;
-      border-radius: 20px;
-      box-shadow: 1px 1px 1px black;
-    }
-    #Hébergements aside h4
-    {
-      display: flex;
-      margin: 0px 10px 0px 10px;
-      font-size: 1.2em;
-      align-content: flex-start;
-      flex-wrap: wrap;
-    }
-   #Hébergements aside div a
-   {
-      display: flex; 
-      width: 100% ; 
-      height: 160px;
-      padding: 5px;
-   }
-   aside div span
-   {
-     display: flex; 
-     flex-wrap: wrap;
-   }
-   
-  /*Activités*/
-  #Activités
-  {
     display: flex;
-    height: 700px;
-    width: 100%;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    margin-top: 50px;
-  }
-  #Activités article
-  {
-    flex-direction: column;
-    display: flex;  
-    border: #f2f2f2;
-    border-radius: 20px;
-    height: 700px;
-    overflow: hidden;
-    align-content:flex-start;
-    flex-wrap: wrap;  
-    width: 100%;
-  }
-  #Activités div:hover
-    {
-      background-color:#0065fc;
-      box-shadow: 5px 5px 5px white;
-    }
-  #Activités div:hover a
-    {
-      color: white;
-    }
-  #Activités div:hover i
-    {
-      color: white;
-    }
-  #Activités div:hover #nostar
-    {
-      color: #0065fc;
-      text-shadow: 1px 1px 2px white;
-    }
-  
-  #Activités div
-    {
-      display: flex;
-      align-content: flex-start;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 10px;
-      padding: 10px;
-      background-color: white;
-      border-radius: 20px;
-      box-shadow: 1px 1px 1px #f2f2f2;
-      font-weight: bold;
-    }
-  #Grandes
-  {
-    width: 22.25%;
-    height: 700px ;
-  }
-  #Grandes img 
-    {
-      display: flex;
-      align-content: flex-start;
-      flex-wrap: wrap;
-      width: 100% ; 
-      height: 630px; 
-      object-fit: cover;
-      border-radius: 20px 20px 0px 0px;
-      
-    }
-    #Grandes div a
-   {
-      display: flex; 
-      width: 100% ; 
-      height: 700px;
-   }
-  #pornegres
-  {
-    width: 22.25%;
-    height: 372px;
-  }
-  #pornegres img 
-    {
-      display: flex;
-      align-content: flex-start;
-      flex-wrap: wrap;
-      width: 100% ; 
-      height: 334.8px; 
-      object-fit: cover;
-      border-radius: 20px 20px 0px 0px;     
-    }
-    #pornegres div a
-   {
-      display: flex; 
-      width: 100% ; 
-      height: 372px;
-   }
-   #Frioul
-   {
-     width: 22.25%;
-     height: 248px;
-   }
-   #Frioul img 
-     {
-       display: flex;
-       align-content: flex-start;
-       flex-wrap: wrap;
-       width: 100% ; 
-       height: 223.2px; 
-       object-fit: cover;
-       border-radius: 20px 20px 0px 0px; 
-     }
-     #Frioul div a
-    {
-       display: flex; 
-       width: 100% ; 
-       height: 244px;
-    }
-    #moitie
-    {
-      width: 22.25%;
-      height: 310px;
-    }
-    #moitie img 
-      {
-        display: flex;
-        align-content: flex-start;
-        flex-wrap: wrap;
-        width: 100% ; 
-        height: 279px; 
-        object-fit: cover;
-        border-radius: 20px 20px 0px 0px; 
-      }
-      #moite div a
-     {
-        display: flex; 
-        width: 100% ; 
-        height: 310px;
-     }
-     #Activités h2
-    {
-      display: flex ;
-      font-weight: bold;
-      font-size: 1.2em;
-      margin: 25px 30px 0px 30px;
-      width: 100%;
-    }
-    .un:nth-child(1) 
-    {
-      order: 1;
-    }
-    .deux:nth-child(2) 
-    {
-      order: 2;
-    }
-    .troix:nth-child(3) 
-    {
-      order: 3;
-    }
-    .quatre:nth-child(4)
-    {
-      order: 4;
-    }
-    .cinq:nth-child(5)
-    {
-      order: 5;
-    }
-    .six:nth-child(6)
-    {
-      order: 6;
-    }
-    #Activités a
-    {
-      color: black;
-    }
-
-  /*Footer*/
-  footer
-  {
-    display: flex;
-    height: 200px;
-    width: 100%;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    margin-top: 150px;
-    background-color: #f2f2f2;
-  }
-  footer div
-  {
-    display: flex;
-    margin: 10px;
-    width: 30%;
-    height: 150px;
-    flex-direction: column;
-  }
-  footer div a
-  {
-    color: black;
+    float: unset;
   }
 
-
-    
-    
-    
+}
