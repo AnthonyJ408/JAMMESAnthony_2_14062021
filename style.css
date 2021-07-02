@@ -43,13 +43,23 @@ a {
   text-decoration: none;
 }
 
-a[class="Menu"]:hover {
+#heb:hover , #act:hover {
   border-top: 2px solid #0065fc;
-  padding: 30px;
 }
 
-a[class="Menu"]:visited {
-  font-weight: 400;
+#heb:hover .heb , #act:hover .act {
+  color: #0065fc;
+}
+
+#heb , #act {
+  padding: 15px;
+}
+
+.ins {
+  color: #0065fc;
+  text-shadow: 0px 1px #0065fc;
+}
+.heb , .act {
   color: black;
 }
 
@@ -105,6 +115,19 @@ form {
   font-size: 1em;
   padding: 10px;
 }
+button {
+  border-radius: 0px 20px 20px 0px;
+  border: white;
+  padding: 10px;
+  visibility: hidden;
+  background-color: #0065fc;
+  position: absolute;
+  right: 0px;
+}
+button i {
+  color: white;
+  font-size: 1em;
+}
 
 #Recherche:hover {
   background-color: #deebff;
@@ -117,7 +140,7 @@ form {
 }
 
 #pincolor {
-  padding: 5px;
+  justify-content: center;
   display: flex;
   font-size: 1.2em;
   color: black;
@@ -137,6 +160,7 @@ form {
 #filtres ul {
   list-style-type: none;
   font-weight: bold;
+  font-size: 1em;
   display: flex;
   vertical-align: middle;
   padding-left: 0px;
@@ -164,18 +188,11 @@ form {
   padding: 10px;
   margin-left: -2px;
   width: 20px;
-}
-
-.fa-heart:before {
-  padding-top: 3px;
-  padding-left: 2px;
-  content: "\f004";
-}
-
-.fa-child:before {
-  content: "\f1ae";
-  padding-left: 4px;
-  padding-top: 1px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  height: 23px;
+  width: 23px;
 }
 
 #filtres a {
@@ -183,6 +200,7 @@ form {
   padding: 0px 20px 0px 0px;
   border: solid #f2f2f2;
   border-radius: 50px;
+  border-left: 0px;
 }
 
 #filtres div {
@@ -222,7 +240,7 @@ form {
 }
 
 
-/*section id="Hébergements article*/
+/*section id="Hébergements .article*/
 
 #Hébergements {
   display: flex;
@@ -231,12 +249,12 @@ form {
   flex-wrap: wrap;
 }
 
-div i {
+#Hébergements div i {
   color: #0065fc;
   font-size: 12px;
 }
 
-#Hébergements article {
+#Hébergements .article {
   padding: 30px 0px 30px 0px;
   margin: 30px 30px 0px 0px;
   background-color: #f2f2f2;
@@ -249,7 +267,7 @@ div i {
   justify-content: center;
 }
 
-#Hébergements article h2 {
+#Hébergements .article h2 {
   display: flex;
   font-weight: bold;
   font-size: 1.5em;
@@ -257,7 +275,7 @@ div i {
   margin-left: 30px;
 }
 
-#Hébergements article h3 {
+#Hébergements .article h3 {
   margin: 0px;
   font-size: 1.2em;
 }
@@ -266,20 +284,20 @@ div i {
   color: black;
 }
 
-.element:hover {
+div[class="element"]:hover {
   background-color: #0065fc;
   box-shadow: 5px 5px 5px white;
 }
 
-.element:hover a {
+div[class="element"]:hover a {
   color: white;
 }
 
-.element:hover i {
+div[class="element"]:hover i {
   color: white;
 }
 
-.element:hover #nostar {
+.element:hover #nostar , .element:hover #nostar1 , .element:hover #nostar2 , .element:hover #nostar3 , .element:hover #nostar4 , .photoaside:hover #nostar5 {
   color: #0065fc;
   text-shadow: 1px 1px 2px white;
 }
@@ -295,22 +313,22 @@ div i {
   width: 100%;
 }
 
-#nostar {
+#nostar , #nostar1 , #nostar2 , #nostar3 , #nostar4 , #nostar5  {
   color: #f2f2f2;
 }
 
-#Hébergements article img {
+#Hébergements .article img {
   width: 100%;
   height: 60%;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 
-#textarticle p {
+.textarticle p {
   margin: 0px;
 }
 
-#textarticle {
+.textarticle {
   display: flex;
   padding: 10px;
   width: 100%;
@@ -345,7 +363,11 @@ aside {
   align-items: center;
 }
 
-#photoaside a {
+aside h2 i {
+  color: black;
+  font-size: 1em;
+}
+.photoaside a {
   display: flex;
   flex-direction: row;
   align-content: flex-start;
@@ -365,22 +387,17 @@ aside h2 a {
   color: black;
 }
 
-#photoaside:hover {
+.photoaside:hover {
   background-color: #0065fc;
   box-shadow: 5px 5px 5px white;
 }
 
-#photoaside:hover a {
+.photoaside:hover a {
   color: white;
 }
 
-#photoaside:hover i {
+.photoaside:hover i {
   color: white;
-}
-
-#photoaside:hover #nostar {
-  color: #0065fc;
-  text-shadow: 1px 1px 2px white;
 }
 
 #Hébergements aside img {
@@ -393,7 +410,7 @@ aside h2 a {
   border-radius: 20px 0px 0px 20px;
 }
 
-#photoaside {
+.photoaside {
   display: flex;
   flex-wrap: nowrap;
   padding: 5px;
@@ -412,7 +429,7 @@ aside h2 a {
   font-size: 1.2em;
 }
 
-#textaside {
+.textaside {
   margin: 1.5%;
   display: flex;
   flex-wrap: wrap;
@@ -435,7 +452,7 @@ aside h2 a {
   margin: 15px;
 }
 
-#Activités article {
+#Activités .article {
   flex-direction: column;
   display: flex;
   border: #f2f2f2;
@@ -447,96 +464,83 @@ aside h2 a {
   width: 100%;
 }
 
-#Activités div:hover {
+.Grandes:hover , .moitie:hover , .Frioul:hover , .pornegres:hover {
   background-color: #0065fc;
 }
 
-#Activités div:hover a {
-  color: white;
-}
-
-#Activités div:hover i {
-  color: white;
-}
-
-#Activités div:hover #nostar {
-  color: #0065fc;
-  text-shadow: 1px 1px 2px white;
-}
-
-#Activités div {
+.Grandes , .moitie , .Frioul , .pornegres {
   display: block;
   margin: 10px;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 1px 1px 10px #f2f2f2;
+  box-shadow: 10px 1px 10px #f2f2f2;
   font-weight: bold;
 }
 
-#Grandes {
+.Grandes {
   width: 20%;
   height: 100%;
 }
 
-#Grandes img {
+.Grandes img {
   width: 100%;
   height: 39rem;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 
-#Grandes div a {
+.Grandes div a {
   width: 100%;
   height: 700px;
 }
 
-#pornegres {
+.pornegres {
   width: 23%;
   height: 385px;
 }
 
-#pornegres img {
+.pornegres img {
   width: 100%;
   height: 21rem;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 
-#pornegres div a {
+.pornegres div a {
   width: 100%;
   height: 372px;
 }
 
-#Frioul {
+.Frioul {
   width: 23%;
   height: 273px;
 }
 
-#Frioul img {
+.Frioul img {
   width: 100%;
   height: 14rem;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 
-#Frioul div a {
+.Frioul div a {
   width: 100%;
   height: 273px;
 }
 
-#moitie {
+.moitie {
   width: 31%;
   height: 329px;
 }
 
-#moitie img {
+.moitie img {
   width: 100%;
   height: 17rem;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 
-#moite div a {
+.moitie div a {
   width: 100%;
   height: 329px;
 }
@@ -549,27 +553,27 @@ aside h2 a {
   width: 100%;
 }
 
-.un:nth-child(1) {
+#un:nth-child(1) {
   order: 1;
 }
 
-.deux:nth-child(2) {
+#deux:nth-child(2) {
   order: 2;
 }
 
-.troix:nth-child(3) {
+#troix:nth-child(3) {
   order: 3;
 }
 
-.quatre:nth-child(4) {
+#quatre:nth-child(4) {
   order: 4;
 }
 
-.cinq:nth-child(5) {
+#cinq:nth-child(5) {
   order: 5;
 }
 
-.six:nth-child(6) {
+#six:nth-child(6) {
   order: 6;
 }
 
@@ -589,6 +593,7 @@ footer {
   margin-top: 10%;
   background-color: #f2f2f2;
   line-height: 2em;
+  margin-left: -20px;
 }
 
 footer div {
@@ -607,7 +612,7 @@ footer div a {
 /*Tablette et jusqu'a 1151px*/
 @media (max-width: 1151px){
 
-#Hébergements article {
+#Hébergements .article {
   width: 100%;
 }
 #Hébergements aside{
@@ -622,7 +627,7 @@ footer div a {
   flex-wrap: wrap;
   justify-content: center;
 }
-#photoaside {
+.photoaside {
   display: flex;
   flex-direction: row;
   align-items: normal;
@@ -648,7 +653,7 @@ aside{
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
-#textaside {
+.textaside {
   padding: 10px;
   width: 100%;
   height: 70px;
@@ -656,78 +661,78 @@ aside{
   flex-wrap: wrap;
 }
 
-#textaside p {
+.textaside p {
   margin: 0px;
 }
 #Hébergements aside h3 {
   margin: 0px;
   font-size: 1.2em;
 }
-#photoaside a{
+.photoaside a{
   display: flex;
   flex-direction: column;
 }
 aside h2 a{
   padding-left: 0px;
 }
-#Activités article{
+#Activités .article{
   flex-direction: row;
 }
-#Grandes {
+.Grandes {
   width: 100%;
   height: 21%;
 }
 
-#Grandes img {
-  width: 100%;
-  height: 6rem;
-}
-
-#Grandes div a {
-  width: 100%;
-  height: 21%;
-}
-#pornegres {
-  width: 58%;
-  height: 21%;
-}
-
-#pornegres img {
+.Grandes img {
   width: 100%;
   height: 6rem;
 }
 
-#pornegres div a {
+.Grandes div a {
+  width: 100%;
+  height: 21%;
+}
+.pornegres {
   width: 58%;
   height: 21%;
 }
-#Frioul {
+
+.pornegres img {
+  width: 100%;
+  height: 6rem;
+}
+
+.pornegres div a {
+  width: 58%;
+  height: 21%;
+}
+.Frioul {
   width: 38%;
   height: 21%;
 }
-#Frioul img {
+.Frioul img {
   width: 100%;
   height: 6rem;
 }
 
-#Frioul div a {
+.Frioul div a {
   width: 38%;
   height: 21%;
 }
 #Activités div {
   margin: 1%;
 }
-#moitie {
+.moitie {
   width: 48%;
   height: 21%;
 }
 
-#moitie img {
+.moitie img {
   width: 100%;
   height: 6rem;
 }
 
-#moite div a {
+.moite div a {
   width: 48%;
   height: 21%;
 }
@@ -739,12 +744,103 @@ footer {
 }
 }
 /*Téléphone*/
-@media (max-width: 768px){
+@media ( max-width: 768px) {
   #logo {
-    width: 50%;
-    height: 10%;
+    width: 25%;
+    height: 5%;
     display: flex;
     float: unset;
+    margin-left: 1rem;
   }
 
+  aside:nth-child(n) {
+    order: 1;
+  }
+  
+  .article:nth-child(n) {
+    order: 2;
+  }
+  #ins {
+    position:absolute;
+    top:1rem;
+    right:1rem;
+    font-size: 1.7em;
+  }
+  #heb , #act {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-size: 1.7em;
+    width: 42%;
+    border-bottom: 10px solid #f2f2f2;
+    border-width: 5px;
+    margin:unset;
+  }
+
+  nav ul {
+    display: flex;
+    margin:unset;
+    padding: unset;
+    width: 120%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  #heb:hover , #act:hover {
+    border-bottom: 10px solid #0065fc;
+    border-width: 5px;
+    border-top: unset;
+    padding: unset;
+  }
+  #ins:hover {
+    border-top: unset;
+    padding: unset;
+  }
+  header h1 {
+    margin:0px 10px 0px 10px;
+  }
+  body {
+    margin:unset;
+  }
+  #sTitre1 {
+    margin:0px 10px 0px 10px
+  }
+  form {
+    margin:0px 10px 0px 10px
+  }
+  #Recherche {
+    visibility: hidden;
+    position: absolute;
+    width: 0px;
+  }
+  button {
+    visibility: visible;
+    position:unset;
+    width: 10%;
+    border-radius: 5px;
+  }
+  button:nth-child(4) {
+    order:3;
+    }
+  #Recherche:nth-child(3) {
+    order: 4;
+  }
+  button:hover {
+    background-color: #deebff;
+  }
+  
+  button:hover i {
+    color:#0065fc
+  }
+  #site-search {
+    border: 1px solid #f2f2f2;
+    font-size: 1.2em;
+    width: 80%;
+  }
+  #pin {
+    width: 10%;
+  }
+  form {
+    margin: 0px;
+  }
 }
