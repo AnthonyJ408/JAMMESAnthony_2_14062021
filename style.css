@@ -1,13 +1,11 @@
 @font-face {
   font-family: "Raleway", sans-serif;
   src: url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-  font-weight: normal;
-  font-style: normal;
 }
 
 body {
   font-family: "Raleway", sans-serif;
-  margin: 50px 0px 10px 10px;
+  margin: 50px;
   max-width: 1300px;
 }
 
@@ -31,23 +29,22 @@ nav {
 nav ul {
   list-style-type: none;
   text-align: right;
-  font-weight: bold;
 }
 
 nav li {
   display: inline;
   margin: 20px;
 }
-
+  
 a {
   text-decoration: none;
 }
 
-#heb:hover , #act:hover {
+#heb:hover , #act:hover  {
   border-top: 2px solid #0065fc;
 }
 
-#heb:hover .heb , #act:hover .act {
+#heb:hover .heb , #act:hover .act , #aff:hover {
   color: #0065fc;
 }
 
@@ -57,10 +54,11 @@ a {
 
 .ins {
   color: #0065fc;
-  text-shadow: 0px 1px #0065fc;
+  font-weight:bold;
 }
 .heb , .act {
   color: black;
+  font-weight: 600;
 }
 
 
@@ -68,8 +66,8 @@ a {
 
 h1 {
   font-size: 1.5em;
-  font-weight: bold;
-  margin: 50px 5px 5px 0px;
+  font-weight: 900;
+  margin: 50px 5px 10px 0px;
 }
 
 
@@ -90,12 +88,14 @@ h1 {
 #site-search {
   border: 1px solid #f2f2f2;
   font-size: 1.2em;
-  width: 25%;
+  width: 21%;
+  font-weight: bold;
+  height: 45px;
+  padding: 15px;
 }
 
 form {
   display: flex;
-  font-weight: bold;
   font-family: "Raleway", sans-serif;
 }
 
@@ -106,27 +106,23 @@ form {
 }
 
 #Recherche {
-  font-weight: bold;
+  font-weight: 600;
   background-color: #0065fc;
   font-family: "Raleway", sans-serif;
   color: #deebff;
-  border-radius: 0px 20px 20px 0px;
+  border-radius: 0px 10px 10px 0px;
   border: white;
   font-size: 1em;
   padding: 10px;
 }
 button {
-  border-radius: 0px 20px 20px 0px;
+  border-radius: 10px 10px 10px 10px;
   border: white;
   padding: 10px;
   visibility: hidden;
   background-color: #0065fc;
   position: absolute;
   right: 0px;
-}
-button i {
-  color: white;
-  font-size: 1em;
 }
 
 #Recherche:hover {
@@ -144,11 +140,12 @@ button i {
   display: flex;
   font-size: 1.2em;
   color: black;
+  padding-top: 1px;
 }
 
 #pin {
   padding: 10px;
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 10px 0px 0px 10px;
   border: white;
   background-color: rgb(242, 242, 242);
   width: 2%;
@@ -203,7 +200,7 @@ button i {
   border-left: 0px;
 }
 
-#filtres div {
+#filtres p {
   padding-left: 10px;
   padding-right: 10px;
   display: flex;
@@ -225,18 +222,17 @@ button i {
   color: #deebff;
 }
 
-#filtres a:hover div {
+#filtres a:hover p {
   color: white;
 }
 
 #info i {
   border: solid 2px #f2f2f2;
   border-radius: 100px;
-  padding: 5px;
+  padding: 4px 2px 1px 2px;
   width: 20px;
   height: 20px;
   text-align: center;
-  padding: 3px 1px 0px 1px;
 }
 
 
@@ -249,7 +245,11 @@ button i {
   flex-wrap: wrap;
 }
 
-#Hébergements div i {
+h2 {
+  margin-bottom: 0px;
+}
+
+div i {
   color: #0065fc;
   font-size: 12px;
 }
@@ -284,16 +284,16 @@ button i {
   color: black;
 }
 
-div[class="element"]:hover {
+.element:hover {
   background-color: #0065fc;
   box-shadow: 5px 5px 5px white;
 }
 
-div[class="element"]:hover a {
+.element:hover a {
   color: white;
 }
 
-div[class="element"]:hover i {
+.element:hover i {
   color: white;
 }
 
@@ -586,31 +586,33 @@ aside h2 a {
 
 footer {
   display: flex;
-  height: 200px;
+  height: 300px;
   width: 100%;
   align-content: flex-start;
   flex-wrap: wrap;
   margin-top: 10%;
   background-color: #f2f2f2;
-  line-height: 2em;
-  margin-left: -20px;
+  margin-left: -50px;
+  padding-left:30px;
+  padding-right:30px ;
+}
+footer p {
+margin: 10px 10px 10px 0px;
 }
 
 footer div {
   display: flex;
-  margin: 1%;
-  padding: 1%;
   width: 25%;
-  height: 150px;
   flex-direction: column;
   flex-wrap: wrap;
+  margin: 3%;
 }
 
 footer div a {
   color: black;
 }
-/*Tablette et jusqu'a 1151px*/
-@media (max-width: 1151px){
+/*Tablette et jusqu'a 1241px*/
+@media (max-width: 1241px){
 
 #Hébergements .article {
   width: 100%;
@@ -741,17 +743,20 @@ footer div {
 }
 footer {
   height: 400px;
+  flex-direction: column;
 }
 }
 /*Téléphone*/
 @media ( max-width: 768px) {
+  /*Header*/
   #logo {
-    width: 25%;
-    height: 5%;
+    width: 33%;
+    height: 67%;
     display: flex;
     float: unset;
     margin-left: 1rem;
-  }
+    margin-top: 1rem;
+}
 
   aside:nth-child(n) {
     order: 1;
@@ -762,28 +767,29 @@ footer {
   }
   #ins {
     position:absolute;
-    top:1rem;
-    right:1rem;
-    font-size: 1.7em;
+    top:30px;
+    right:1%;
+    font-size: 1.2em;
   }
   #heb , #act {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    font-size: 1.7em;
-    width: 42%;
+    font-size: 1.2em;
+    width: 50%;
     border-bottom: 10px solid #f2f2f2;
     border-width: 5px;
     margin:unset;
+    height: 50px;
   }
 
   nav ul {
     display: flex;
     margin:unset;
     padding: unset;
-    width: 120%;
-    margin-top: 30px;
+    width: 100%;
+    margin-top: 50px;
     margin-bottom: 30px;
   }
   #heb:hover , #act:hover {
@@ -792,18 +798,23 @@ footer {
     border-top: unset;
     padding: unset;
   }
+  #heb , #act {
+    padding:unset
+  }
+
   #ins:hover {
     border-top: unset;
     padding: unset;
   }
   header h1 {
-    margin:0px 10px 0px 10px;
+    margin:0px 5% 10px 5%;
+    font-size: 1.9em;
   }
   body {
     margin:unset;
   }
   #sTitre1 {
-    margin:0px 10px 0px 10px
+    margin:0px 5% 0px 5%;
   }
   form {
     margin:0px 10px 0px 10px
@@ -818,6 +829,7 @@ footer {
     position:unset;
     width: 10%;
     border-radius: 5px;
+    margin-left: -5px;
   }
   button:nth-child(4) {
     order:3;
@@ -828,19 +840,167 @@ footer {
   button:hover {
     background-color: #deebff;
   }
-  
+  button i {
+    color: unset;
+    color: white;
+    font-size: 1em;
+  }
   button:hover i {
     color:#0065fc
   }
+
+  #barrederecherche{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+
   #site-search {
     border: 1px solid #f2f2f2;
     font-size: 1.2em;
-    width: 80%;
+    width: 100%;
   }
   #pin {
-    width: 10%;
+    width: 5%;
   }
   form {
     margin: 0px;
   }
-}
+  body {
+    width: 100%;
+    display:flex ;
+    align-items: center;
+    flex-direction: column;
+  }
+  /*filtres*/
+  #fi {
+    width: 100%;
+  }
+  #filtres {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #rom {
+    width: 100%;
+  }
+  #info {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  /*aside*/
+
+  aside h2 i {
+  margin-left: 30%;
+  }
+
+  #Hébergements aside {
+    margin: 30px 5% 0px 5%;
+  }
+
+  .photoaside {
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    height: 150px;
+    flex-wrap: nowrap;
+    align-content: center;
+  }
+
+  #Hébergements .photoaside a{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #Hébergements aside img {
+    width: 40%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .textaside {
+    width: 50%;
+  }
+
+  /*Hebergements*/
+
+  #Hébergements .article {
+    margin: 30px 5% 0px 5%;
+  }
+
+  .element {
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    height: 150px;
+    flex-wrap: nowrap;
+    align-content: center;
+  }
+
+  #Hébergements .element a{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #Hébergements .article img {
+    width: 40%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .textarticle {
+    width: 50%;
+  }
+
+  /*Activités*/
+
+  #Activités {
+    margin: 30px 5% 0px 5%;
+  }
+
+  #Activités .article div{
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    height: 150px;
+    flex-wrap: nowrap;
+    align-content: center;
+  }
+
+  #Activités .article div a{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #Activités .article div img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  }
