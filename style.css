@@ -56,6 +56,11 @@ a {
   color: #0065fc;
   font-weight:bold;
 }
+
+.ins:hover {
+  color: #deebff;
+}
+
 .heb , .act {
   color: black;
   font-weight: 600;
