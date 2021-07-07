@@ -6,7 +6,7 @@
 body {
   font-family: "Raleway", sans-serif;
   margin: 50px;
-  max-width: 1300px;
+  max-width: 1500px;
 }
 
 
@@ -209,10 +209,6 @@ button {
 }
 
 #filtres a:hover {
-  display: flex;
-  padding: 0px 20px 0px 0px;
-  border: solid #f2f2f2;
-  border-radius: 50px;
   background-color: #0065fc;
   color: #deebff;
 }
@@ -224,6 +220,16 @@ button {
 
 #filtres a:hover p {
   color: white;
+}
+
+#info {
+  display: flex;
+}
+
+#info p {
+  margin-top: unset;
+  margin-left: 10px;
+  margin-top: 5px ;
 }
 
 #info i {
@@ -247,6 +253,7 @@ button {
 
 h2 {
   margin-bottom: 0px;
+  margin-left: 7%;
 }
 
 div i {
@@ -270,14 +277,14 @@ div i {
 #Hébergements .article h2 {
   display: flex;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.4em;
   width: 100%;
   margin-left: 30px;
 }
 
 #Hébergements .article h3 {
   margin: 0px;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 #Hébergements a {
@@ -294,6 +301,10 @@ div i {
 }
 
 .element:hover i {
+  color: white;
+}
+
+.element:hover .textarticle {
   color: white;
 }
 
@@ -365,7 +376,7 @@ aside {
 
 aside h2 i {
   color: black;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 .photoaside a {
   display: flex;
@@ -377,7 +388,7 @@ aside h2 i {
 #Hébergements aside h2 {
   display: flex;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.4em;
   width: 100%;
 }
 
@@ -385,6 +396,14 @@ aside h2 a {
   padding-left: 22%;
   margin-bottom: 20px;
   color: black;
+}
+
+aside h2 i:hover {
+  color: #0065fc;
+}
+
+.photoaside:hover .textaside {
+  color: white;
 }
 
 .photoaside:hover {
@@ -426,14 +445,15 @@ aside h2 a {
 
 #Hébergements aside h3 {
   margin: 0px;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .textaside {
   margin: 1.5%;
   display: flex;
   flex-wrap: wrap;
-  width: 55%;
+  width: 48%;
+  margin-left: 3%;
 }
 
 
@@ -449,7 +469,12 @@ aside h2 a {
 }
 
 #Activités p {
-  margin: 15px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 0.9em;
 }
 
 #Activités .article {
@@ -466,6 +491,10 @@ aside h2 a {
 
 .Grandes:hover , .moitie:hover , .Frioul:hover , .pornegres:hover {
   background-color: #0065fc;
+}
+
+.Grandes:hover p, .moitie:hover p, .Frioul:hover p, .pornegres:hover p {
+  color: white;
 }
 
 .Grandes , .moitie , .Frioul , .pornegres {
@@ -548,7 +577,7 @@ aside h2 a {
 #Activités h2 {
   display: flex;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.4em;
   margin: 30px;
   width: 100%;
 }
@@ -611,6 +640,10 @@ footer div {
 footer div a {
   color: black;
 }
+
+footer div a:hover {
+  color: #0065fc;
+}
 /*Tablette et jusqu'a 1241px*/
 @media (max-width: 1241px){
 
@@ -668,7 +701,7 @@ aside{
 }
 #Hébergements aside h3 {
   margin: 0px;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 .photoaside a{
   display: flex;
@@ -754,8 +787,8 @@ footer {
     height: 67%;
     display: flex;
     float: unset;
-    margin-left: 1rem;
-    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
 }
 
   aside:nth-child(n) {
@@ -808,7 +841,7 @@ footer {
   }
   header h1 {
     margin:0px 5% 10px 5%;
-    font-size: 1.9em;
+    font-size: 1.5em;
   }
   body {
     margin:unset;
@@ -827,7 +860,7 @@ footer {
   button {
     visibility: visible;
     position:unset;
-    width: 10%;
+    width: 15%;
     border-radius: 5px;
     margin-left: -5px;
   }
@@ -861,7 +894,7 @@ footer {
     width: 100%;
   }
   #pin {
-    width: 5%;
+    width: 10%;
   }
   form {
     margin: 0px;
@@ -880,6 +913,11 @@ footer {
     margin-left: 5%;
     margin-right: 5%;
   }
+
+  #filtres a {
+    padding: unset;
+  }
+
   #rom {
     width: 100%;
   }
@@ -890,21 +928,32 @@ footer {
 
   /*aside*/
 
+  #Hébergements aside h2 {
+    margin: 0px 0px 6% 7%;
+  }
+
+  .textaside p {
+    height: 40px;
+    margin-top: 10px;
+  }
+
   aside h2 i {
-  margin-left: 30%;
+  margin-left: 20%;
   }
 
   #Hébergements aside {
-    margin: 30px 5% 0px 5%;
+    border-radius: unset;
+    margin: 0px;
   }
 
   .photoaside {
     flex-direction: column;
     align-items: center;
     width: 85%;
-    height: 150px;
+    height: 120px;
     flex-wrap: nowrap;
     align-content: center;
+    margin: 2%;
   }
 
   #Hébergements .photoaside a{
@@ -915,7 +964,7 @@ footer {
 
   #Hébergements aside img {
     width: 40%;
-    height: 160px;
+    height: 130px;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
     display: flex;
@@ -930,69 +979,102 @@ footer {
   /*Hebergements*/
 
   #Hébergements .article {
-    margin: 30px 5% 0px 5%;
+    margin: 0px;
+    background-color: unset;
+  }
+
+  #Hébergements .article h2 {
+    margin: 0px 0px 6% 7%
   }
 
   .element {
     flex-direction: column;
     align-items: center;
     width: 85%;
-    height: 150px;
+    height: 170px;
     flex-wrap: nowrap;
     align-content: center;
+    margin: 2%;
   }
 
   #Hébergements .element a{
     height: 100%;
-    display: flex;
-    flex-direction: row;
   }
 
   #Hébergements .article img {
-    width: 40%;
-    height: 160px;
+    width: 100%;
+    height: 60%;
     object-fit: cover;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 20px 20px 0px 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
   }
 
   .textarticle {
-    width: 50%;
+    height: 30%;
   }
 
   /*Activités*/
 
+  #Activités div {
+    margin: unset;
+  }
+
+  #Activités h2 {
+    margin: 0px 0px 6% 7%
+  }
+
   #Activités {
+    height: unset;
+  }
+
+  #Activités .article {
     margin: 30px 5% 0px 5%;
+    height: unset;
   }
 
   #Activités .article div{
     flex-direction: column;
     align-items: center;
-    width: 85%;
-    height: 150px;
+    width: 100%;
+    height: 170px;
     flex-wrap: nowrap;
     align-content: center;
+    margin: 2%;
   }
 
   #Activités .article div a{
     height: 100%;
-    display: flex;
-    flex-direction: row;
   }
 
   #Activités .article div img {
     width: 100%;
-    height: 90%;
+    height: 75%;
     object-fit: cover;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 20px 20px 0px 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
   }
 
+  /*Footer*/
+
+  footer {
+    height: unset;
+    flex-direction: column;
+    padding: unset;
+    margin-left: unset;
+  }
+
+  footer div {
+    margin: 10px 7% 15px 7%;
+    width: 85%;
+  }
+
+  footer p {
+    margin: 5px;
+  }
 
 
 
