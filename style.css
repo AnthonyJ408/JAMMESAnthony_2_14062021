@@ -215,12 +215,23 @@ button {
 	border-left: 0px;
 }
 
+#filtres h2 {
+	display: flex;
+	margin-top:0;
+	margin-bottom:0;
+	margin-left: 0px;
+	color: black;
+	font-size: 1em;
+	align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 #filtres p {
 	padding-left: 10px;
-	padding-right: 10px;
-	display: flex;
-	margin: 10px 0px 10px 0px;
-	color: black;
+    padding-right: 10px;
+    display: flex;
+    margin: 10px 0px 10px 0px;
+    color: black;
 }
 
 #filtres a:hover {
@@ -306,29 +317,29 @@ div i {
 	color: black;
 }
 
-.element:hover {
+.cartearticle:hover {
 	background-color: #0065fc;
 	box-shadow: 5px 5px 5px white;
 }
 
-.element:hover a {
+.cartearticle:hover a {
 	color: white;
 }
 
-.element:hover i {
+.cartearticle:hover i {
 	color: white;
 }
 
-.element:hover .textarticle {
+.cartearticle:hover .textarticle {
 	color: white;
 }
 
-.element:hover #nostar,
-.element:hover #nostar1,
-.element:hover #nostar2,
-.element:hover #nostar3,
-.element:hover #nostar4,
-.photoaside:hover #nostar5 {
+.cartearticle:hover #nostar,
+.cartearticle:hover #nostar1,
+.cartearticle:hover #nostar2,
+.cartearticle:hover #nostar3,
+.cartearticle:hover #nostar4,
+.carteaside:hover #nostar5 {
 	color: #0065fc;
 	text-shadow: 1px 1px 2px white;
 }
@@ -372,7 +383,7 @@ div i {
 	flex-wrap: wrap;
 }
 
-.element {
+.cartearticle {
 	margin: 1.5%;
 	padding: 5px 5px 15px 5px;
 	background-color: white;
@@ -404,7 +415,7 @@ aside h2 i {
 	font-size: 1.2em;
 }
 
-.photoaside a {
+.carteaside a {
 	display: flex;
 	flex-direction: row;
 	align-content: flex-start;
@@ -428,20 +439,20 @@ aside h2 i:hover {
 	color: #0065fc;
 }
 
-.photoaside:hover .textaside {
+.carteaside:hover .textaside {
 	color: white;
 }
 
-.photoaside:hover {
+.carteaside:hover {
 	background-color: #0065fc;
 	box-shadow: 5px 5px 5px white;
 }
 
-.photoaside:hover a {
+.carteaside:hover a {
 	color: white;
 }
 
-.photoaside:hover i {
+.carteaside:hover i {
 	color: white;
 }
 
@@ -455,7 +466,7 @@ aside h2 i:hover {
 	border-radius: 20px 0px 0px 20px;
 }
 
-.photoaside {
+.carteaside {
 	display: flex;
 	flex-wrap: nowrap;
 	padding: 5px;
@@ -487,7 +498,6 @@ aside h2 i:hover {
 
 #Activités {
 	display: flex;
-	height: 700px;
 	width: 100%;
 	align-content: flex-start;
 	flex-wrap: wrap;
@@ -508,112 +518,113 @@ aside h2 i:hover {
 	display: flex;
 	border: #f2f2f2;
 	border-radius: 20px;
-	height: 700px;
 	overflow: hidden;
 	align-content: flex-start;
 	flex-wrap: wrap;
 	width: 100%;
+	height: 570px;
+	padding-bottom: 10px;
 }
 
-.Grandes:hover,
-.moitie:hover,
-.Frioul:hover,
-.pornegres:hover {
+.carteportparc:hover,
+.cartedamelongchamp:hover,
+.cartefrioul:hover,
+.cartepornegres:hover {
 	background-color: #0065fc;
 }
 
-.Grandes:hover p,
-.moitie:hover p,
-.Frioul:hover p,
-.pornegres:hover p {
+.carteportparc:hover p,
+.cartedamelongchamp:hover p,
+.cartefrioul:hover p,
+.cartepornegres:hover p {
 	color: white;
 }
 
-.Grandes,
-.moitie,
-.Frioul,
-.pornegres {
+.carteportparc,
+.cartedamelongchamp,
+.cartefrioul,
+.cartepornegres {
 	display: block;
-	margin: 10px;
 	background-color: white;
 	border-radius: 20px;
 	box-shadow: 10px 1px 10px #f2f2f2;
 	font-weight: bold;
-}
-
-.Grandes {
-	width: 20%;
-	height: 100%;
-}
-
-.Grandes img {
-	width: 100%;
-	height: 39rem;
-	object-fit: cover;
-	border-radius: 20px 20px 0px 0px;
-}
-
-.Grandes div a {
-	width: 100%;
-	height: 700px;
-}
-
-.pornegres {
 	width: 23%;
-	height: 385px;
 }
 
-.pornegres img {
+.carteportparc {
+	height: 540px;
+	margin: 2% 0px 0px 0px;
+}
+
+.carteportparc img {
 	width: 100%;
-	height: 21rem;
+	height: 490px;
 	object-fit: cover;
 	border-radius: 20px 20px 0px 0px;
 }
 
-.pornegres div a {
+.carteportparc div a {
 	width: 100%;
-	height: 372px;
+	height: 540px;
 }
 
-.Frioul {
-	width: 23%;
-	height: 273px;
+.cartepornegres {
+	height: 320px;
+	margin: 2%;
 }
 
-.Frioul img {
+.cartepornegres img {
 	width: 100%;
-	height: 14rem;
+	height: 270px;
 	object-fit: cover;
 	border-radius: 20px 20px 0px 0px;
 }
 
-.Frioul div a {
+.cartepornegres div a {
 	width: 100%;
-	height: 273px;
+	height: 320px;
 }
 
-.moitie {
-	width: 31%;
-	height: 329px;
+.cartefrioul {
+	height: 160px;
+	margin: 2% 2% 0px 2%;
 }
 
-.moitie img {
+.cartefrioul img {
 	width: 100%;
-	height: 17rem;
+	height: 110px;
 	object-fit: cover;
 	border-radius: 20px 20px 0px 0px;
 }
 
-.moitie div a {
+.cartefrioul div a {
 	width: 100%;
-	height: 329px;
+	height: 160px;
+}
+
+.cartedamelongchamp {
+	height: 255px;
+	margin: 2% 0px 0px 2%;
+}
+
+.cartedamelongchamp img {
+	width: 100%;
+	height: 205px;
+	object-fit: cover;
+	border-radius: 20px 20px 0px 0px;
+}
+
+.cartedamelongchamp div a {
+	width: 100%;
+	height: 255px;
 }
 
 #Activités h2 {
 	display: flex;
 	font-weight: bold;
 	font-size: 1.4em;
-	margin: 15px;
+	margin: 15px 15px 0px 15px;
 	width: 100%;
 }
 
@@ -646,6 +657,7 @@ aside h2 i:hover {
 }
 
 
+
 /*Footer*/
 
 footer {
@@ -654,7 +666,7 @@ footer {
 	width: 100%;
 	align-content: flex-start;
 	flex-wrap: wrap;
-	margin-top: 10%;
+	margin-top: 50px;
 	background-color: #f2f2f2;
 	margin-left: -50px;
 	padding-left: 30px;
@@ -687,11 +699,12 @@ footer div a:hover {
 @media (max-width: 1241px) {
 	#Hébergements .article {
 		width: 100%;
+		margin:30px 0px 0px 0px;
 	}
 	#Hébergements aside {
 		width: 100%;
 		padding: 30px 0px 30px 0px;
-		margin: 30px 30px 0px 0px;
+		margin-top: 30px;
 		background-color: #f2f2f2;
 		display: flex;
 		border: #f2f2f2;
@@ -700,7 +713,7 @@ footer div a:hover {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-	.photoaside {
+	.carteaside {
 		display: flex;
 		flex-direction: row;
 		align-items: normal;
@@ -740,7 +753,7 @@ footer div a:hover {
 		margin: 0px;
 		font-size: 1em;
 	}
-	.photoaside a {
+	.carteaside a {
 		display: flex;
 		flex-direction: column;
 	}
@@ -750,54 +763,54 @@ footer div a:hover {
 	#Activités .article {
 		flex-direction: row;
 	}
-	.Grandes {
+	.carteportparc {
 		width: 100%;
 		height: 21%;
 	}
-	.Grandes img {
+	.carteportparc img {
 		width: 100%;
 		height: 6rem;
 	}
-	.Grandes div a {
+	.carteportparc div a {
 		width: 100%;
 		height: 21%;
 	}
-	.pornegres {
+	.cartepornegres {
 		width: 58%;
 		height: 21%;
 	}
-	.pornegres img {
+	.cartepornegres img {
 		width: 100%;
 		height: 6rem;
 	}
-	.pornegres div a {
+	.cartepornegres div a {
 		width: 58%;
 		height: 21%;
 	}
-	.Frioul {
+	.cartefrioul {
 		width: 38%;
 		height: 21%;
 	}
-	.Frioul img {
+	.cartefrioul img {
 		width: 100%;
 		height: 6rem;
 	}
-	.Frioul div a {
+	.cartefrioul div a {
 		width: 38%;
 		height: 21%;
 	}
-	#Activités div {
+	#Activités article {
 		margin: 1%;
 	}
-	.moitie {
+	.cartedamelongchamp {
 		width: 48%;
 		height: 21%;
 	}
-	.moitie img {
+	.cartedamelongchamp img {
 		width: 100%;
 		height: 6rem;
 	}
-	.moite div a {
+	.cartedamelongchamp div a {
 		width: 48%;
 		height: 21%;
 	}
@@ -969,7 +982,7 @@ footer div a:hover {
 		border-radius: unset;
 		margin: 0px;
 	}
-	.photoaside {
+	.carteaside {
 		flex-direction: column;
 		align-items: center;
 		width: 85%;
@@ -978,7 +991,7 @@ footer div a:hover {
 		align-content: center;
 		margin: 2%;
 	}
-	#Hébergements .photoaside a {
+	#Hébergements .carteaside a {
 		height: 100%;
 		display: flex;
 		flex-direction: row;
@@ -1003,7 +1016,7 @@ footer div a:hover {
 	#Hébergements .article h2 {
 		margin: 0px 0px 6% 7%
 	}
-	.element {
+	.cartearticle {
 		flex-direction: column;
 		align-items: center;
 		width: 85%;
@@ -1012,7 +1025,7 @@ footer div a:hover {
 		align-content: center;
 		margin: 2%;
 	}
-	#Hébergements .element a {
+	#Hébergements .cartearticle a {
 		height: 100%;
 	}
 	#Hébergements .article img {
@@ -1028,7 +1041,7 @@ footer div a:hover {
 		height: 30%;
 	}
 	/*Activités*/
-	#Activités div {
+	#Activités article {
 		margin: unset;
 	}
 	#Activités h2 {
@@ -1041,7 +1054,7 @@ footer div a:hover {
 		margin: 30px 5% 0px 5%;
 		height: unset;
 	}
-	#Activités .article div {
+	#Activités .article article {
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
@@ -1050,10 +1063,10 @@ footer div a:hover {
 		align-content: center;
 		margin: 2%;
 	}
-	#Activités .article div a {
+	#Activités .article article a {
 		height: 100%;
 	}
-	#Activités .article div img {
+	#Activités .article article img {
 		width: 100%;
 		height: 75%;
 		object-fit: cover;
