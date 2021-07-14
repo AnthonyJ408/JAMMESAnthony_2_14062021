@@ -504,7 +504,7 @@ aside h2 i:hover {
 	margin-top: 50px;
 }
 
-#Activités p {
+#Activités h3 {
 	display: flex;
 	flex-direction: row;
 	align-content: center;
@@ -533,10 +533,10 @@ aside h2 i:hover {
 	background-color: #0065fc;
 }
 
-.carteportparc:hover p,
-.cartedamelongchamp:hover p,
-.cartefrioul:hover p,
-.cartepornegres:hover p {
+.carteportparc:hover h3,
+.cartedamelongchamp:hover h3,
+.cartefrioul:hover h3,
+.cartepornegres:hover h3 {
 	color: white;
 }
 
@@ -762,6 +762,7 @@ footer div a:hover {
 	}
 	#Activités .article {
 		flex-direction: row;
+		height: unset;
 	}
 	.carteportparc {
 		width: 100%;
